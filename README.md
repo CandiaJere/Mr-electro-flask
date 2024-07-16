@@ -1,2 +1,2 @@
 # Mr-electro-flask
-trabajo practico integrador Codo a Codo 2024
+Trabajo Práctico Integrador Codo a Codo 2024
