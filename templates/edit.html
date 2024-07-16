@@ -1,0 +1,60 @@
+{% include 'defaults/head.html' %}
+
+<body>
+  {% include 'defaults/header.html'%}
+
+
+
+     <h1 class="text-center w-50 m-auto mt-3 textosuc1">Editar Cliente</h1>
+  <div class="formedit container w-50 my-5">
+
+    <form action="/edit/{{cliente[0]}}" method="POST">
+      <div class="mb-3">
+        
+        <input type="hidden" name="id" value="{{cliente[0]}}" />
+
+        <label for="exampleFormControlInput1" class="form-label mb-0"
+          >Nombre</label
+        >
+        
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput1"
+          name="nombre"
+          value="{{cliente[1]}}"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label mb-0"
+          >Descripcion</label
+        >
+        
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput3"
+          name="email"
+          value="{{cliente[2]}}"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput3" class="form-label mb-0"
+          >contacto</label>
+        
+        <input
+          type="text"
+          class="form-control mb-5"
+          id="exampleFormControlInput3"
+          name="contacto"
+          value="{{cliente[3]}}"
+        />
+      </div>
+
+      <input type="submit" class="btn w-50 btn-primary" value="Guardar Cambios" />
+    </form>
+  </div>
+  {% include 'defaults/footer.html'%}
+</body>
+
+{% include 'defaults/scriptsjs.html'%}

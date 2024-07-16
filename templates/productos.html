@@ -1,0 +1,57 @@
+{% include 'defaults/head.html' %}
+
+<body>
+    {% include 'defaults/header.html'%}
+
+
+
+
+
+<div class="container">
+<section class="row productos">
+  <h2 class="text-center mb-4 textosuc animate__animated animate__fadeIn">NUESTROS PRODUCTOS</h2>
+<article class="col-12 col-md-6 col-lg-4 articulo">
+  <h3>Disyuntor</h3>
+  <img src="{{ url_for('static', filename='img/disyuntor.webp') }}" alt="código de producto #001">
+  <p>Protege tu circuito eléctrico de sobrecargas y cortocircuitos con nuestro disyuntor de última generación.</p>
+</article>
+
+<article class="col-12 col-md-6 col-lg-4 articulo">
+  <h3>Lámpara de diseño</h3>
+  <img src="{{ url_for('static', filename='img/lampara.webp') }}" alt="código de producto #002">
+  <p>Ilumina tus espacios con estilo y elegancia gracias a nuestra lámpara de techo de diseño exclusivo.</p>
+</article> 
+
+<article class="col-12 col-md-6 col-lg-4 articulo">
+  <h3>Lámparita incandescente</h3>
+  <img src="{{ url_for('static', filename='img/lamparita.webp') }}" alt="código de producto #003">
+  <p>Disfruta de una iluminación cálida y acogedora mientras ahorras energía con nuestra lámparita incandescente de bajo consumo.</p>
+</article>
+
+<article class="col-12 col-md-6 col-lg-4 articulo">
+  <h3>Portalámparas</h3>
+  <img src="{{ url_for('static', filename='img/portalamparas.webp') }}" alt="código de producto #004">
+  <p>Renueva tus lámparas con nuestro portalámparas versátil y funcional. Diseñado para adaptarse a una amplia variedad de bombillas y lámparas, nuestro portalámparas ofrece una solución práctica y segura para instalar y cambiar fácilmente tus fuentes de luz.</p>
+</article>
+
+<article class="col-12 col-md-6 col-lg-4 articulo">
+  <h3>Rollo Cable unipolar</h3>
+  <img src="{{ url_for('static', filename='img/rollo_cable.webp') }}" alt="código de producto #005">
+  <p>Descubre la solución perfecta para tus proyectos eléctricos: nuestro rollo de cable unipolar de 1.5mm. Conductor único, cubierta aislante resistente y fácil instalación para una conducción segura y eficiente en cualquier entorno.</p>
+</article>
+
+<article class="col-12 col-md-6 col-lg-4 articulo">
+  <h3>Llave de luz</h3>
+  <img src="{{ url_for('static', filename='img/llave_de_luz.webp') }}" alt="código de producto #006">
+  <p>Llave de luz de diseño moderno y funcionalidad superior. Fabricada con materiales de alta calidad y un diseño ergonómico, garantiza un control preciso y fácil acceso a la iluminación de cualquier habitación.</p>
+</article>
+</section>
+</div>
+
+
+
+{% include 'defaults/scriptsjs.html'%}
+{% include 'defaults/footer.html'%}
+</body>
+
+</html>

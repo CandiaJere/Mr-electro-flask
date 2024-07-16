@@ -1,0 +1,38 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+                <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/electro.png') }}" class="logo" alt="Electro"></a>
+                <h1 class="animate__animated animate__rubberBand"><a href="{{ url_for('index') }}">MR ELECTRO</a></h1>
+                <h2 class="text-light">Tienda de productos y servicios eléctricos</h2>
+            </div>
+        </div>
+    </div>
+
+<!-- navegador-->
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="{{ url_for('index') }}">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="{{ url_for('contacto') }}">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="{{ url_for('sucursales') }}">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="{{ url_for('servicios') }}">Nuestros Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="{{ url_for('productos') }}">Nuestros Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
